@@ -1,35 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Offline Folder Video App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Offline Video Player</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <h1>Offline Video Player</h1>
 
-    <!-- Folder View -->
-    <div id="folderView">
-        <div id="createFolder">
-            <input type="text" id="newFolderName" placeholder="New folder name" />
-            <button id="createBtn">Create Folder</button>
-        </div>
+  <input type="file" id="videoInput" accept="video/*" multiple>
+  <div id="videoList"></div>
 
-        <h1>Select a Folder</h1>
-        <div id="folderList"></div>
-    </div>
-
-    <!-- Video View -->
-    <div id="videoView" style="display:none;">
-        <button id="backBtn">← Back to Folders</button>
-        <h2 id="folderTitle"></h2>
-        <input type="file" id="videoInput" accept="video/*" multiple />
-        <div id="videoList"></div>
-    </div>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
