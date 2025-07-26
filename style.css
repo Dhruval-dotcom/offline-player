@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+h1 {
+  color: #333;
+}
+
+video {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+  display: block;
+}
